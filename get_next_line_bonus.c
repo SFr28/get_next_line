@@ -6,7 +6,7 @@
 /*   By: sfraslin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/29 11:56:38 by sfraslin          #+#    #+#             */
-/*   Updated: 2024/12/06 18:11:24 by sfraslin         ###   ########.fr       */
+/*   Updated: 2024/12/09 17:02:41 by sfraslin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ char	*ft_read(char *str, char *stash, int fd, int i)
 
 char	*get_next_line(int fd)
 {
-	static char	stash[1024][BUFFER_SIZE];
+	static char	stash[1024][BUFFER_SIZE + 1];
 	char		*str;
 	int			i;
 
